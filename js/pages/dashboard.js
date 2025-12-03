@@ -16,14 +16,12 @@ export async function renderDashboard(container, headerActions) {
     // 1. Render Filters in Header
     renderFilters(headerActions);
 
-    // 2. Fetch Data if not loaded
-    if (rawStories.length === 0 || rawTopics.length === 0) {
-        try {
-            await loadData();
-        } catch (error) {
-            container.innerHTML = `<div class="error">Failed to load data: ${error.message}</div>`;
-            return;
-        }
+    // 2. Fetch Data
+    try {
+        await loadData();
+    } catch (error) {
+        container.innerHTML = `<div class="error">Failed to load data: ${error.message}</div>`;
+        return;
     }
 
     // 3. Process and Render Content
@@ -57,7 +55,7 @@ function renderFilters(headerActions) {
 }
 
 async function loadData() {
-    // Load Topics from DataService
+    // Load Topics from DataService (Always refresh)
     const initiatives = await DataService.getInitiatives();
     // Map to expected format for dashboard processing
     rawTopics = initiatives.map(i => ({
@@ -67,10 +65,12 @@ async function loadData() {
         AssignedEpics: i.assignedEpics
     }));
 
-    // Load Stories
-    const storiesResponse = await fetch('PI261_Stories.csv');
-    const storiesText = await storiesResponse.text();
-    rawStories = Papa.parse(storiesText, { header: true, skipEmptyLines: true }).data;
+    // Load Stories (Cache)
+    if (rawStories.length === 0) {
+        const storiesResponse = await fetch('PI261_Stories.csv');
+        const storiesText = await storiesResponse.text();
+        rawStories = Papa.parse(storiesText, { header: true, skipEmptyLines: true }).data;
+    }
 
     // Populate Initiative Filter
     const initFilter = document.getElementById('initiative-filter');
@@ -106,7 +106,7 @@ function updateDashboard(container) {
                                 </tr>
                             </thead>
                             <tbody>
-                                ${initiativeStats.map(i => {
+                                ${initiativeStats.sort((a, b) => a.prio - b.prio).map(i => {
         const percent = i.budget > 0 ? (i.planned / i.budget) * 100 : 0;
         const color = percent > 110 ? 'var(--danger)' : percent < 90 ? 'var(--polypoint-orange)' : 'var(--success)';
         return `
@@ -120,6 +120,22 @@ function updateDashboard(container) {
                                     `;
     }).join('')}
                             </tbody>
+                            <tfoot>
+                                ${(() => {
+            const totalBudget = initiativeStats.reduce((sum, i) => sum + i.budget, 0);
+            const totalPlanned = initiativeStats.reduce((sum, i) => sum + i.planned, 0);
+            const totalPercent = totalBudget > 0 ? (totalPlanned / totalBudget) * 100 : 0;
+            const totalColor = totalPercent > 110 ? 'var(--danger)' : totalPercent < 90 ? 'var(--polypoint-orange)' : 'var(--success)';
+            return `
+                                    <tr style="font-weight: bold; background-color: #f8fafc; border-top: 2px solid #e2e8f0;">
+                                        <td colspan="2">Total</td>
+                                        <td style="text-align: right; font-family: monospace;">${formatCurrency(totalBudget)}</td>
+                                        <td style="text-align: right; font-family: monospace;">${formatCurrency(totalPlanned)}</td>
+                                        <td style="text-align: right; color: ${totalColor};">${totalPercent.toFixed(1)}%</td>
+                                    </tr>
+                                    `;
+        })()}
+                            </tfoot>
                         </table>
                     </div>
                 </div>
@@ -179,10 +195,10 @@ function updateDashboard(container) {
                                 <td>${parent.summary}</td>
                                 <td><span style="background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem;">${parent.initiative}</span></td>
                                 ${Object.keys(TEAM_CONFIG).map(t => {
-        if (selectedTeam !== 'All' && selectedTeam !== t) return '';
-        const val = parent.teams[t] || 0;
-        return `<td style="text-align: right; font-family: monospace;">${val > 0 ? val : '-'}</td>`;
-    }).join('')}
+            if (selectedTeam !== 'All' && selectedTeam !== t) return '';
+            const val = parent.teams[t] || 0;
+            return `<td style="text-align: right; font-family: monospace;">${val > 0 ? val : '-'}</td>`;
+        }).join('')}
                                 <td style="text-align: right; font-weight: bold;">${parent.totalPoints.toFixed(1)}</td>
                             </tr>
                         `).join('')}

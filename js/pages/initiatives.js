@@ -32,23 +32,27 @@ function renderTable(container) {
                 <table id="initiatives-table">
                     <thead>
                         <tr>
-                            <th style="width: 80px;">Prio</th>
-                            <th>Initiative Name</th>
-                            <th style="width: 150px;">Budget (CHF)</th>
-                            <th style="width: 100px;">Actions</th>
+                            <th style="width: 60px;">Prio</th>
+                            <th style="width: 200px;">Initiative Name</th>
+                            <th style="width: 120px;">Budget (CHF)</th>
+                            <th>Assigned Epics (comma separated)</th>
+                            <th style="width: 60px;">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         ${initiatives.sort((a, b) => a.prio - b.prio).map(init => `
                             <tr data-id="${init.id}">
                                 <td>
-                                    <input type="number" class="edit-prio" value="${init.prio}" style="width: 60px;">
+                                    <input type="number" class="edit-prio" value="${init.prio}" style="width: 50px;">
                                 </td>
                                 <td>
                                     <input type="text" class="edit-topic" value="${init.topic}">
                                 </td>
                                 <td>
                                     <input type="number" class="edit-invest" value="${init.invest}">
+                                </td>
+                                <td>
+                                    <input type="text" class="edit-epics" value="${init.assignedEpics || ''}" placeholder="REL-123, REL-456">
                                 </td>
                                 <td>
                                     <button class="btn-icon delete-btn" title="Delete">
@@ -118,6 +122,7 @@ async function updateInitiative(id, fieldClass, value) {
     if (fieldClass.includes('edit-prio')) updates.prio = parseInt(value);
     if (fieldClass.includes('edit-topic')) updates.topic = value;
     if (fieldClass.includes('edit-invest')) updates.invest = parseInt(value);
+    if (fieldClass.includes('edit-epics')) updates.assignedEpics = value;
 
     // Optimistic update
     Object.assign(init, updates);
