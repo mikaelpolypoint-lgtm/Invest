@@ -75,7 +75,7 @@ export default function Dashboard() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/PI261_Stories.csv');
+                const response = await fetch(import.meta.env.BASE_URL + 'PI261_Stories.csv');
                 const reader = response.body?.getReader();
                 const result = await reader?.read();
                 const decoder = new TextDecoder('utf-8');

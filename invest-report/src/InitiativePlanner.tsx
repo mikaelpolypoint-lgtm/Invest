@@ -54,7 +54,7 @@ export default function InitiativePlanner() {
         const loadData = async () => {
             try {
                 // 1. Load Topics
-                const topicsResponse = await fetch('/Topics.csv');
+                const topicsResponse = await fetch(import.meta.env.BASE_URL + 'Topics.csv');
                 const topicsText = await topicsResponse.text();
                 const topicsData = Papa.parse<Topic>(topicsText, { header: true, delimiter: ';', skipEmptyLines: true }).data;
 
@@ -67,7 +67,7 @@ export default function InitiativePlanner() {
                 }));
 
                 // 2. Load Stories
-                const storiesResponse = await fetch('/PI261_Stories.csv');
+                const storiesResponse = await fetch(import.meta.env.BASE_URL + 'PI261_Stories.csv');
                 const storiesText = await storiesResponse.text();
                 const storiesData = Papa.parse<Story>(storiesText, { header: true, skipEmptyLines: true }).data;
 
