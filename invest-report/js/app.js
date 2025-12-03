@@ -1,49 +1,73 @@
 import { renderDashboard } from './pages/dashboard.js';
 import { renderInitiatives } from './pages/initiatives.js';
+import { renderLogin } from './pages/login.js';
+import { AuthService } from './services/auth.js';
 
 const routes = {
     'dashboard': renderDashboard,
-    'initiatives': renderInitiatives
+    'initiatives': renderInitiatives,
+    'login': renderLogin // Add login to routes for potential direct access, though auth check will override
 };
 
 const DEFAULT_PAGE = 'dashboard';
+let currentUser = null;
 
-function init() {
-    window.addEventListener('hashchange', handleRoute);
-
-    // Initial route
-    handleRoute();
-}
-
-function handleRoute() {
-    let hash = window.location.hash.slice(1); // Remove #
-
-    if (!hash) {
-        window.location.hash = DEFAULT_PAGE;
-        return;
-    }
-
-    const page = hash.split('/')[0] || DEFAULT_PAGE;
-
-    // Update Sidebar
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.classList.toggle('active', link.dataset.page === page);
+// Initialize App
+document.addEventListener('DOMContentLoaded', () => {
+    // Listen for Auth State
+    AuthService.onAuthStateChanged((user) => {
+        currentUser = user;
+        handleRoute();
+        updateNavigation();
     });
 
-    // Render
+    // Handle Navigation
+    window.addEventListener('hashchange', handleRoute);
+});
+
+function handleRoute() {
     const container = document.getElementById('page-container');
-    const title = document.getElementById('page-title');
     const headerActions = document.getElementById('header-actions');
 
     // Clear previous content
-    container.innerHTML = '<div class="loading-spinner">Loading...</div>';
+    container.innerHTML = '';
     headerActions.innerHTML = '';
 
-    if (routes[page]) {
-        title.textContent = capitalize(page);
-        routes[page](container, headerActions);
+    // Check Auth
+    if (!currentUser) {
+        renderLogin(container);
+        return;
+    }
+
+    // Get Page from Hash
+    const hash = window.location.hash.slice(1) || DEFAULT_PAGE;
+    const renderFunction = routes[hash] || routes[DEFAULT_PAGE];
+
+    // Update Active Link
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${hash}`) {
+            link.classList.add('active');
+        }
+    });
+
+    // Render Page
+    renderFunction(container, headerActions);
+}
+
+function updateNavigation() {
+    const nav = document.querySelector('.nav-links');
+    const userInfo = document.querySelector('.user-info');
+
+    if (currentUser) {
+        nav.style.display = 'flex';
+        userInfo.innerHTML = `
+            <button id="logout-btn" class="btn btn-secondary" style="padding: 4px 12px; font-size: 0.8rem;">Logout</button>
+        `;
+        document.getElementById('logout-btn').addEventListener('click', () => AuthService.logout());
     } else {
-        container.innerHTML = '<h1>404 - Page Not Found</h1>';
+        nav.style.display = 'none';
+        userInfo.innerHTML = '';
     }
 }
 
