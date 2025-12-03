@@ -1,12 +1,13 @@
-Prio;Topic;Invest
-1;Planungswunsch;45000
-2;myPOLYPOINT: Teamplan (ganzes Planblatt) anzeigen ;95000
-3;smartPEP;115000
-6;Verbesserungen Zeiterfassung;65000
-5;Partnerarchitektur;25000
-4;Partnerarchitektur;15000
-7;Changes 26.1;13000
-0;EOL;15000
-0;Technische Improvements;122000
-0;Leftovers;70000
-0;Nichtfunktional;15000
+Prio;Topic;Invest;AssignedEpics
+0;EOL;15000;REL-878
+0;Technische Improvements;122000;REL-874, REL-883, REL-885, REL-862, REL-991
+0;Leftovers;70000;REL-750, REL-832, REL-825
+0;Nichtfunktional;70000;REL-892
+1;Planungswunsch;45000;REL-849, REL-879, REL-899, REL-847
+2;myPOLYPOINT: Teamplan (ganzes Planblatt) anzeigen;95000;REL-826
+3;smartPEP;95000;REL-901, REL-900, REL-882, REL-891
+3;Partnerarchitektur;95000;REL-893
+4;Partnerarchitektur;15000;REL-893
+5;Verbesserungen Zeiterfassung;66000;REL-795
+6;Changes 26.1;15000;REL-884
+7;Changes 26.1;19000;REL-888
