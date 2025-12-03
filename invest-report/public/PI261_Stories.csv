@@ -1,0 +1,165 @@
+Issue key,Team,Sprint,Story Points,Parent key,Parent summary
+TUNGSTEN-339,Tungsten,Tungsten-26.1-S1,5.0,,
+TUNGSTEN-247,Tungsten,Tungsten-26.1-S4,8.0,,
+PPCLOUD-13322,Zn2C,Zn2C-26.1-S1,3.0,,
+PPCLOUD-13318,Zn2C,Zn2C-26.1-S1,1.0,,
+PPCLOUD-12973,Zn2C,Zn2C-26.1-S1,5.0,,
+PP-15129,Neon,Neon-26.1-S3,2.0,,
+SMRTPP-661,H1,H1-26.1-S4,3.0,REL-881,Wochenendverteilung verbessern
+SMRTPP-660,H1,H1-26.1-S4,3.0,REL-881,Wochenendverteilung verbessern
+SMRTPP-659,H1,H1-26.1-S4,3.0,REL-881,Wochenendverteilung verbessern
+SMRTPP-656,H1,H1-26.1-S4,3.0,REL-881,Wochenendverteilung verbessern
+SMRTPP-655,H1,H1-26.1-S2,1.0,REL-881,Wochenendverteilung verbessern
+SMRTPP-654,H1,H1-26.1-S3,4.0,REL-881,Wochenendverteilung verbessern
+SMRTPP-650,H1,H1-26.1-S1,4.0,REL-881,Wochenendverteilung verbessern
+SMRTPP-639,H1,H1-26.1-S2,5.0,REL-881,Wochenendverteilung verbessern
+SMRTPP-638,H1,H1-26.1-S1,3.0,REL-881,Wochenendverteilung verbessern
+PPCLOUD-13131,Zn2C,Zn2C-26.1-S1,5.0,REL-891,Technische Improvements Zinc PI26.1
+PPCLOUD-13129,Zn2C,Zn2C-26.1-S2,8.0,REL-891,Technische Improvements Zinc PI26.1
+PPCLOUD-13123,Zn2C,Zn2C-26.1-S4,5.0,REL-891,Technische Improvements Zinc PI26.1
+PP-14908,Neon,Neon-26.1-S4,3.0,REL-885,Technical Improvements Neon 26.1
+PP-14546,Neon,Neon-26.1-S4,3.0,REL-885,Technical Improvements Neon 26.1
+NEON-804,Neon,Neon-26.1-S1,3.0,REL-885,Technical Improvements Neon 26.1
+IAS-148,Neon,Neon-26.1-S4,1.0,REL-885,Technical Improvements Neon 26.1
+IAS-147,Neon,Neon-26.1-S2,2.0,REL-885,Technical Improvements Neon 26.1
+APIPP-1693,Neon,Neon-26.1-S4,2.0,REL-885,Technical Improvements Neon 26.1
+APIPP-1679,Neon,Neon-26.1-S4,1.0,REL-885,Technical Improvements Neon 26.1
+APIPP-1678,Neon,Neon-26.1-S4,2.0,REL-885,Technical Improvements Neon 26.1
+APIPP-1677,Neon,Neon-26.1-S3,1.0,REL-885,Technical Improvements Neon 26.1
+APIPP-1676,Neon,Neon-26.1-S3,2.0,REL-885,Technical Improvements Neon 26.1
+SMRTPP-690,H1,H1-26.1-S3,3.0,REL-874,Technical Improvements 26.1
+SMRTPP-683,H1,H1-26.1-S4,2.0,REL-874,Technical Improvements 26.1
+SMRTPP-455,H1,H1-26.1-S4,5.0,REL-874,Technical Improvements 26.1
+PPCLOUD-13289,Zn2C,Zn2C-26.1-S2,3.0,REL-825,Tagesübergreifenden Diensttausch inklusive Gegenvorschlag ermöglichen
+PPCLOUD-13241,Zn2C,Zn2C-26.1-S2,5.0,REL-825,Tagesübergreifenden Diensttausch inklusive Gegenvorschlag ermöglichen
+PPCLOUD-13053,Zn2C,Zn2C-26.1-S2,3.0,REL-825,Tagesübergreifenden Diensttausch inklusive Gegenvorschlag ermöglichen
+PPCLOUD-13052,Zn2C,Zn2C-26.1-S4,5.0,REL-825,Tagesübergreifenden Diensttausch inklusive Gegenvorschlag ermöglichen
+PPCLOUD-13048,Zn2C,Zn2C-26.1-S1,8.0,REL-825,Tagesübergreifenden Diensttausch inklusive Gegenvorschlag ermöglichen
+PPCLOUD-13045,Zn2C,Zn2C-26.1-S2,3.0,REL-825,Tagesübergreifenden Diensttausch inklusive Gegenvorschlag ermöglichen
+PPCLOUD-13042,Zn2C,Zn2C-26.1-S3,8.0,REL-825,Tagesübergreifenden Diensttausch inklusive Gegenvorschlag ermöglichen
+PP-15196,H1,H1-26.1-S4,5.0,REL-899,PW | Reporting
+SMRTPP-643,H1,H1-26.1-S4,3.0,REL-847,PW | Regelprüfung bei Eingabe eines Wunsches
+SMRTPP-642,H1,H1-26.1-S2,1.0,REL-847,PW | Regelprüfung bei Eingabe eines Wunsches
+SMRTPP-511,H1,H1-26.1-S2,3.0,REL-847,PW | Regelprüfung bei Eingabe eines Wunsches
+SMRTPP-510,H1,H1-26.1-S1,5.0,REL-847,PW | Regelprüfung bei Eingabe eines Wunsches
+PPCLOUD-13275,H1,H1-26.1-S2,3.0,REL-847,PW | Regelprüfung bei Eingabe eines Wunsches
+PPCLOUD-13274,H1,H1-26.1-S2,2.0,REL-847,PW | Regelprüfung bei Eingabe eines Wunsches
+PPCLOUD-13273,H1,H1-26.1-S1,1.0,REL-847,PW | Regelprüfung bei Eingabe eines Wunsches
+SMRTPP-682,H1,H1-26.1-S1,1.0,REL-849,PW | Push-Benachrichtigungen
+PP-15003,H1,H1-26.1-S1,1.0,REL-849,PW | Push-Benachrichtigungen
+PP-14989,H1,H1-26.1-S1,1.0,REL-849,PW | Push-Benachrichtigungen
+PP-14988,H1,H1-26.1-S1,3.0,REL-849,PW | Push-Benachrichtigungen
+SMRTPP-657,H1,H1-26.1-S4,3.0,REL-879,PW | Migration / Roll-out
+SMRTPP-637,H1,H1-26.1-S3,5.0,REL-879,PW | Migration / Roll-out
+PPCLOUD-13324,H1,H1-26.1-S4,3.0,REL-879,PW | Migration / Roll-out
+PPCLOUD-13290,H1,H1-26.1-S3,1.0,REL-879,PW | Migration / Roll-out
+APIPP-1675,H1,H1-26.1-S2,3.0,REL-879,PW | Migration / Roll-out
+APIGW-515,H1,H1-26.1-S2,3.0,REL-879,PW | Migration / Roll-out
+NEON-667,Neon,Neon-26.1-S4,3.0,REL-862,On Prem Liquibase Installer für alle Workforce Lösungen
+NEON-666,Neon,Neon-26.1-S3,4.0,REL-862,On Prem Liquibase Installer für alle Workforce Lösungen
+NG-7167,H1,H1-26.1-S3,1.0,REL-878,Kurve Maintainability sicherstellen bis Ende 2027 (2/2 26.1)
+NG-7166,H1,H1-26.1-S2,2.0,REL-878,Kurve Maintainability sicherstellen bis Ende 2027 (2/2 26.1)
+NG-7142,H1,H1-26.1-S2,2.0,REL-878,Kurve Maintainability sicherstellen bis Ende 2027 (2/2 26.1)
+NG-7141,H1,H1-26.1-S1,2.0,REL-878,Kurve Maintainability sicherstellen bis Ende 2027 (2/2 26.1)
+NG-7139,H1,H1-26.1-S1,2.0,REL-878,Kurve Maintainability sicherstellen bis Ende 2027 (2/2 26.1)
+PP-15210,Neon,Neon-26.1-S2,3.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+PP-15208,Neon,Neon-26.1-S2,2.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+PP-15204,Neon,Neon-26.1-S4,3.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+PP-15151,Neon,Neon-26.1-S1,2.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1694,Neon,Neon-26.1-S3,2.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1692,Neon,Neon-26.1-S1,1.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1691,Neon,Neon-26.1-S2,2.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1687,Neon,Neon-26.1-S2,2.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1686,Neon,Neon-26.1-S2,1.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1684,Neon,Neon-26.1-S1,2.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1683,Neon,Neon-26.1-S1,2.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1671,Neon,Neon-26.1-S1,1.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1644,Neon,Neon-26.1-S3,1.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+APIPP-1603,Neon,Neon-26.1-S2,3.0,REL-750,Konfliktcheck in Library auslagern/Drools ersetzen mit Java
+NEON-802,Neon,Neon-26.1-S2,3.0,REL-884,Interlink EOL - Feinschliffe an PolyTimeConnect
+NEON-801,Neon,Neon-26.1-S1,1.0,REL-884,Interlink EOL - Feinschliffe an PolyTimeConnect
+APIPP-1681,Neon,Neon-26.1-S1,2.0,REL-884,Interlink EOL - Feinschliffe an PolyTimeConnect
+APIPP-1680,Neon,Neon-26.1-S1,1.0,REL-884,Interlink EOL - Feinschliffe an PolyTimeConnect
+SMRTPP-692,H1,H1-26.1-S1,1.0,REL-882,Grundverteilung der Dienste verbessern
+SMRTPP-671,H1,H1-26.1-S2,3.0,REL-882,Grundverteilung der Dienste verbessern
+SMRTPP-670,H1,H1-26.1-S2,2.0,REL-882,Grundverteilung der Dienste verbessern
+SMRTPP-669,H1,H1-26.1-S2,2.0,REL-882,Grundverteilung der Dienste verbessern
+SMRTPP-668,H1,H1-26.1-S2,3.0,REL-882,Grundverteilung der Dienste verbessern
+SMRTPP-667,H1,H1-26.1-S1,3.0,REL-882,Grundverteilung der Dienste verbessern
+SMRTPP-665,H1,H1-26.1-S2,2.0,REL-882,Grundverteilung der Dienste verbessern
+SMRTPP-664,H1,H1-26.1-S1,1.0,REL-882,Grundverteilung der Dienste verbessern
+SMRTPP-645,H1,H1-26.1-S3,2.0,REL-882,Grundverteilung der Dienste verbessern
+PPCLOUD-12797,Zn2C,Zn2C-26.1-S3,2.0,REL-832,Follow-up Emergency-Drill
+PPCLOUD-12794,Zn2C,Zn2C-26.1-S4,5.0,REL-832,Follow-up Emergency-Drill
+PPCLOUD-10447,Zn2C,Zn2C-26.1-S3,3.0,REL-832,Follow-up Emergency-Drill
+PPCLOUD-10445,Zn2C,Zn2C-26.1-S4,3.0,REL-832,Follow-up Emergency-Drill
+PPCLOUD-13071,Tungsten,Tungsten-26.1-S1,8.0,REL-883,Feature: Config-Service für Cloud-Infos
+PPCLOUD-13070,Tungsten,Tungsten-26.1-S3,8.0,REL-883,Feature: Config-Service für Cloud-Infos
+PP-15092,Neon,Neon-26.1-S2,3.0,REL-883,Feature: Config-Service für Cloud-Infos
+PP-15091,Neon,Neon-26.1-S3,3.0,REL-883,Feature: Config-Service für Cloud-Infos
+PP-15090,Neon,Neon-26.1-S3,2.0,REL-883,Feature: Config-Service für Cloud-Infos
+PP-15089,Neon,Neon-26.1-S2,2.0,REL-883,Feature: Config-Service für Cloud-Infos
+PPCLOUD-13294,Zn2C,Zn2C-26.1-S4,5.0,REL-795,"Externe Verfügbarkeiten: Skills einsetzen, Stornieren von Buchungen & Auto-Pooling"
+PPCLOUD-13291,Zn2C,Zn2C-26.1-S4,5.0,REL-795,"Externe Verfügbarkeiten: Skills einsetzen, Stornieren von Buchungen & Auto-Pooling"
+PPCLOUD-12872,Zn2C,Zn2C-26.1-S3,5.0,REL-795,"Externe Verfügbarkeiten: Skills einsetzen, Stornieren von Buchungen & Auto-Pooling"
+PPCLOUD-11909,Zn2C,Zn2C-26.1-S4,5.0,REL-795,"Externe Verfügbarkeiten: Skills einsetzen, Stornieren von Buchungen & Auto-Pooling"
+SMRTPP-693,H1,H1-26.1-S3,1.0,REL-900,Erweiterung der Einstellungsmöglichkeiten für Feiertage
+SMRTPP-691,H1,H1-26.1-S1,1.0,REL-900,Erweiterung der Einstellungsmöglichkeiten für Feiertage
+SMRTPP-685,H1,H1-26.1-S3,2.0,REL-900,Erweiterung der Einstellungsmöglichkeiten für Feiertage
+SMRTPP-684,H1,H1-26.1-S3,2.0,REL-900,Erweiterung der Einstellungsmöglichkeiten für Feiertage
+SMRTPP-680,H1,H1-26.1-S3,2.0,REL-900,Erweiterung der Einstellungsmöglichkeiten für Feiertage
+SMRTPP-679,H1,H1-26.1-S3,2.0,REL-900,Erweiterung der Einstellungsmöglichkeiten für Feiertage
+SMRTPP-678,H1,H1-26.1-S3,3.0,REL-900,Erweiterung der Einstellungsmöglichkeiten für Feiertage
+SMRTPP-666,H1,H1-26.1-S1,3.0,REL-900,Erweiterung der Einstellungsmöglichkeiten für Feiertage
+TUNGSTEN-336,Tungsten,Tungsten-26.1-S4,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-335,Tungsten,Tungsten-26.1-S2,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-331,Tungsten,Tungsten-26.1-S4,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-330,Tungsten,Tungsten-26.1-S4,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-329,Tungsten,Tungsten-26.1-S4,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-328,Tungsten,Tungsten-26.1-S2,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-327,Tungsten,Tungsten-26.1-S3,2.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-324,Tungsten,Tungsten-26.1-S4,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-323,Tungsten,Tungsten-26.1-S4,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-321,Tungsten,Tungsten-26.1-S4,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-320,Tungsten,Tungsten-26.1-S4,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-319,Tungsten,Tungsten-26.1-S4,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-318,Tungsten,Tungsten-26.1-S4,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-317,Tungsten,Tungsten-26.1-S4,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-316,Tungsten,Tungsten-26.1-S4,2.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-315,Tungsten,Tungsten-26.1-S4,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-314,Tungsten,Tungsten-26.1-S4,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-313,Tungsten,Tungsten-26.1-S3,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-312,Tungsten,Tungsten-26.1-S3,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-311,Tungsten,Tungsten-26.1-S3,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-310,Tungsten,Tungsten-26.1-S3,8.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-309,Tungsten,Tungsten-26.1-S3,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-308,Tungsten,Tungsten-26.1-S3,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-307,Tungsten,Tungsten-26.1-S3,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-306,Tungsten,Tungsten-26.1-S2,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-305,Tungsten,Tungsten-26.1-S3,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-304,Tungsten,Tungsten-26.1-S2,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-303,Tungsten,Tungsten-26.1-S2,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-302,Tungsten,Tungsten-26.1-S2,8.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-301,Tungsten,Tungsten-26.1-S2,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-300,Tungsten,Tungsten-26.1-S2,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-298,Tungsten,Tungsten-26.1-S2,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-297,Tungsten,Tungsten-26.1-S1,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-296,Tungsten,Tungsten-26.1-S2,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-295,Tungsten,Tungsten-26.1-S2,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-294,Tungsten,Tungsten-26.1-S1,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-292,Tungsten,Tungsten-26.1-S1,5.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-291,Tungsten,Tungsten-26.1-S1,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-289,Tungsten,Tungsten-26.1-S1,2.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-288,Tungsten,Tungsten-26.1-S1,8.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-287,Tungsten,Tungsten-26.1-S1,2.0,REL-826,Display the Team Roster in myPOLYPOINT
+TUNGSTEN-273,Tungsten,Tungsten-26.1-S1,3.0,REL-826,Display the Team Roster in myPOLYPOINT
+PPCLOUD-12862,Zn2C,Zn2C-26.1-S4,5.0,REL-892,Cloud-Security-Massnahmen PI26.1 (Minimal Access)
+PPCLOUD-10431,Zn2C,Zn2C-26.1-S2,3.0,REL-892,Cloud-Security-Massnahmen PI26.1 (Minimal Access)
+SMRTPP-658,H1,H1-26.1-S1,3.0,REL-901,Berechtigungen für smartPEP: Zentralisierte Planung
+PP-15203,H1,H1-26.1-S2,2.0,REL-901,Berechtigungen für smartPEP: Zentralisierte Planung
+PP-15199,H1,H1-26.1-S1,1.0,REL-901,Berechtigungen für smartPEP: Zentralisierte Planung
+APIPP-1688,H1,H1-26.1-S1,2.0,REL-901,Berechtigungen für smartPEP: Zentralisierte Planung
+APIGW-518,H1,H1-26.1-S1,2.0,REL-901,Berechtigungen für smartPEP: Zentralisierte Planung
+PPCLOUD-13125,Zn2C,Zn2C-26.1-S4,5.0,REL-893,Beekeeper goes PWA (Zero)
+PPCLOUD-13124,Zn2C,Zn2C-26.1-S3,8.0,REL-893,Beekeeper goes PWA (Zero)
+PP-15064,Neon,Neon-26.1-S1,3.0,REL-888,"""@"" als Zeichen in Benutzernamen ermöglichen in der UserAdmin"
